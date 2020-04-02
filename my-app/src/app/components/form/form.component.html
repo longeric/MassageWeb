@@ -1,0 +1,58 @@
+<p>Forms component works!</p>
+
+<a [routerLink]="['/formcontent/', '123']">跳转到formcontent</a>
+
+<br>
+
+<button (click)="goForm()">get传值跳转路由</button>
+
+<!-- <h2>人员登记系统</h2> -->
+
+<!-- <div class="people_list">
+    <ul>
+        <li>姓名： <input type="text" [(ngModel)]="peopleInfo.username" value="form_input"/> </li>
+
+        <li>性别 
+            <input type="radio" value="1" name="sex" [(ngModel)]="peopleInfo.sex"> 男
+            <input type="radio" value="2" name="sex" [(ngModel)]="peopleInfo.sex"> 女
+         </li>
+         <li>城市：
+             <select name="city" id="city" [(ngModel)]="peopleInfo.city">
+                <option [value]="item" *ngFor="let item of peopleInfo.cityList">{{item}}</option>
+             </select>
+         </li>
+         <li>爱好：
+             <span *ngFor="let item of peopleInfo.hobby; let key=index">
+                <input type="checkbox" [id]="'check' + key" [(ngModel)]="item.checked"/><label [for]="'check'+key">{{item.title}}</label>
+                &nbsp;&nbsp;
+            </span>
+        </li>
+        <li>备注
+            <textarea name="mark" id="" cols="30" rows="3" [(ngModel)]="peopleInfo.mark">
+
+            </textarea>
+       </li>
+    </ul>
+    <br>
+    <br>
+
+    <button (click)="doSubmit()" class="submit">获取表单的内容</button>
+
+    <pre>
+        {{peopleInfo | json}}
+    </pre>
+
+</div> -->
+
+<div class="content">
+    <div class="left">
+        <a [routerLink]="['/form/pcate']">商品分类</a>
+        <hr>
+        <br>
+        <a [routerLink]="['/form/plist']">商品列表</a>
+    </div>
+    <div class="right">
+        右侧
+        <router-outlet></router-outlet>
+    </div>
+</div>

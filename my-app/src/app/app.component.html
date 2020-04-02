@@ -524,8 +524,21 @@
   </svg>
 
 </div> -->
+<header class="header">
+  <a [routerLink]="['/home']" routerLinkActive="active">Home标签</a> 
+  <a routerLink = '/news' routerLinkActive="active">News新闻</a>
+  <a [routerLink]="['/form']" routerLinkActive="active">Form页面</a>
+</header>
+<router-outlet></router-outlet>
+<hr />
+<!-- <app-home></app-home> -->
+<!-- <app-form></app-form> -->
+<!-- <app-search></app-search> -->
+<br><br>
+<!-- <app-todolist></app-todolist> -->
+<!-- <app-home></app-home> -->
+<!-- <app-news></app-news> -->
 
-<app-home></app-home>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

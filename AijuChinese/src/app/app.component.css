@@ -1,0 +1,28 @@
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+  }
+
+.scrolling-wrapper .card {
+    display: inline-block;
+}
+.card-block {
+    min-height: 220px;
+    max-width: 220px;
+}
+#box {
+    overflow-y: visible;
+    overflow-x: auto;
+    white-space: nowrap;
+    vertical-align: text-top;
+    /* margin: 0; */
+   
+        background-color: #fff5eb;
+    padding: 0;
+    width: 50%;
+    clear: both;
+    
+    border-spacing: 5px;
+}

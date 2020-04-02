@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-news',
@@ -7,23 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsComponent implements OnInit {
 
-  title="我是一个新闻组件";
+  @ViewChild('footer') footer:any;
 
-  username:string='zhangsan';
+  constructor() { }
 
-  public userinfo:object={
-    username:"eric",
-    age:'20'
+  public list:any[]=[];
+
+  ngOnInit(){
+    for(var i=0;i<9;i++){
+      this.list.push('这是第' + i + '条数据');
+    }
   }
 
-  public message:any;
-
-  public content="<h2>I am h2 label</h2>";
-  constructor() { 
-    this.message='this is change of variable';
+  getChildMsg(){
+    //获取footer子组件的数据
+    alert(this.footer.msg);
+  }
+  getChildRun(){
+    this.footer.run();
   }
 
-  ngOnInit() {
-  }
+  run(e:any){
 
+    console.log(e);   //子组件给父组件广播的数据
+    alert('我是父组件的run方法');
+  }
 }

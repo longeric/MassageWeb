@@ -11,17 +11,40 @@ import { AppComponent } from './app.component';
 
 import { NewsComponent } from './components/news/news.component';
 import { HomeComponent } from './components/home/home.component';
+import { FormComponent } from './components/form/form.component';
+import { SearchComponent } from './components/search/search.component';
+import { TodolistComponent } from './components/todolist/todolist.component';
+
+//引入并配置service
+import { StorageService} from './services/storage.service';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NewscontentComponent } from './components/newscontent/newscontent.component';
+import { FormcontentComponent } from './components/formcontent/formcontent.component';
+import { WelcomeComponent } from './components/home/welcome/welcome.component';
+import { SettingComponent } from './components/home/setting/setting.component';
+import { PcateComponent } from './components/form/pcate/pcate.component';
+import { PlistComponent } from './components/form/plist/plist.component';
 
 //@NgModule装饰器，@NgModule接收一个元数据对象，告诉angular如何编译和启动应用
 @NgModule({
   declarations: [   //配置当前运行的组件
-    AppComponent, NewsComponent, HomeComponent
+    AppComponent, 
+    NewsComponent, 
+    HomeComponent, 
+    FormComponent, 
+    SearchComponent, 
+    TodolistComponent, 
+    HeaderComponent, 
+    FooterComponent, NewscontentComponent, FormcontentComponent, WelcomeComponent, SettingComponent, PcateComponent, PlistComponent
   ],
   imports: [        //配置当前模块运行依赖的其他模块
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
-  providers: [],    //配置项目所需求的服务
+  providers: [StorageService],    //配置项目所需求的服务
   bootstrap: [AppComponent]
 })
 
