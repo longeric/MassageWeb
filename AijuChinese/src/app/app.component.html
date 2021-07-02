@@ -1,16 +1,43 @@
 
-
+<div class="topheader">
 <div class="page-header">
-  <h1>Example page header <small>Subtext for header</small></h1>
+  <div class="container">
+    <div class="col col-lg-8 col-md-8 col-sm-10">
+      <div>
+        <img src="../assets/images/topcorner.png">
+        <img height="80px" src="../assets/images/aiju_title.png">
+      </div>   
+    </div>
+  </div>
 </div>
-<!-- <router-outlet></router-outlet> -->
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 mr-md-auto font-weight-normal">Holistic Massage</h5>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-5" style="font-weight: bold;">2924 South Park Road, Bethel Park, PA 15102</div>
+    <div class="col-lg-2"></div>
+    <div class="col-lg-4" style="font-weight: bold;">412-833-3077</div>
+  </div>
+</div>
+<div class="container">
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm">
+  <div></div>
+  <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
   <nav class="my-2 my-md-0 mr-md-3">
-    <a class="p-2 text-dark" href="#">Home</a>
-    <a class="p-2 text-dark" href="#">Services</a>
-    <a class="p-2 text-dark" href="#">About Us</a>
-    <a class="p-2 text-dark" href="#">Follow us</a>
+    <a class="p-2 text-dark" routerLink="home" routerLinkActive="active">Home    </a>
+    <a class="p-2 text-dark" routerLink="/type" >Massage Type    </a>
+    <a class="p-2 text-dark" routerLink="/serivces" >Services & Price    </a>
+    <a class="p-2 text-dark" routerLink="/about" >About Us</a>
+    <!-- <a class="p-2 text-dark" href="#">Follow us</a> -->
+    
   </nav>
   <!-- <a class="btn btn-outline-primary" href="#">Sign up</a> -->
 </div>
+</div>
+</div>
+
+<router-outlet></router-outlet>
+
+
+<br>
+<hr>
+<app-footer></app-footer>

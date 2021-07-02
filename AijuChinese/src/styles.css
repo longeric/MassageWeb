@@ -1,3 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-/* @import '../node_modules/font-awesome/css/font-awesome.min.css'; */
+/* @import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; */
+/* @import '../node_modules/bootstrap/dist/js/bootstrap.min.js'; */
+
+
+body {
+    /* background-color: rgb(57, 94, 168); */
+
+    
+
+    /* background: -webkit-gradient(linear,left top ,right bottom,color-stop(0%,#ea5c54),color-stop(100%,#bb6dec)); */
+    /* background: -webkit-linear-gradient(-45deg,#ea5c54 0%,#bb6dec 100%); */
+    /* background: linear-gradient(135deg,#ea5c54 0%,#bb6dec 100%); */
+
+    /* background:linear-gradient(#fff1eb,#ace0f9); */
+
+    /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
+
+    /* background: linear-gradient(91deg,#c5c1d3,#698ab8 70%,#c9ccd4); */
+    /* background: linear-gradient(135deg,#56c8ff,#6f99fc) no-repeat; */
+    /* background-image: linear-gradient(to bottom, #8fe4d8 0%, #517fa4 100%); */
+    /* background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%); */
+
+    /* opacity:0.7; */
+}

@@ -1,0 +1,17 @@
+.partrow{
+    width: 200px;
+    height: auto;
+}
+
+.smalltitle {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.lighter {
+    background-color: rgb(215, 221, 206);
+}
+
+.deeper {
+    background-color: rgb(180, 197, 206);
+}
